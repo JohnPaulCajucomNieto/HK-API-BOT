@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HK BOT</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="/HTML/about_hk-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,300">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Finger+Paint&display=swap">
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      bottom: 0;
+    }
+    p{
+      color:white;
+      margin-left: 1360px;
+      margin-top: 20px;
+      text-decoration: underline;
+      cursor: pointer;
+      
+    }
+    .header{
+      display: flex;
+      gap: 10px;
+      
+    }
+    .footer {
+       background-color: rgb(240, 234, 234);
+      margin-top: 90px;
+      color: black; 
+      text-decoration: none;
+       text-align: center;
+       height: 60px;
+      }
+  </style>
+  <body>
+  <div  style="background-color:  #020F1F; height: 80px;" class="header">
+   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16" style="color: white; margin-top: 20px; cursor: pointer; margin-left:1450px;" onclick="goToLogin()">
+    <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+    <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+</svg>
+
+  </div>
+  <div class="card">
+    <div id="header">
+      <h1 style="text-decoration: underline;"> LEXI BOT<span style="color: #00FFFC;"> 1.0 </span></h1>
+      <img src="about_hk-removebg-preview.png" alt="" srcset="">
+    </div>
+    <div id="message-section">
+      <div  class="message" id="bot"><span id="bot-response"> Hi, my name is HK BOT and I can give you a response to your question about the HK scholarships (ONLY).</span> </div>
+    </div>
+    
+    <div id="input-section">
+      <input id="input" type="text" placeholder="Message HK Bot" autocomplete="off" autofocus="autofocus"/>
+      <button class="send" onclick="sendMessage()">
+        <div class="circle"><i class="zmdi zmdi-mail-send"></i></div>
+      </button>
+    </div>
+  </div>
+  <div class="footer">
+    <pre style="padding-top: 20px;">&copy; 2024 HK BOT | All rights reserved.</pre>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    function goToLogin() {
+      alert('Successfully Logout...');
+      window.location.href = 'logins.php';
+      
+    }
+  </script>
+</body>
+</html>
